@@ -1,0 +1,16 @@
+{
+  "description": "Nortura design enforcement: block accidental position/resize changes to template-derived slot containers.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/lock-template-slots.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}
